@@ -2,11 +2,37 @@
 
 /* applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
-
+/*colour scheme
+licorice #161313
+Venetian red #BF0918
+cosmic cobal #293C89
+slate grey #6A81A0
+platinum #E7EBEB
+*/
 body {
-  background: #fcc;
+  background: #E7EBEB;
 } 
 
+nav{
+}
+
+.menu{
+text-align: center;
+line-height: 3em;
+}
+.logo{
+	padding: 5%;
+	padding-bottom: 0;
+	height: 100px;
+}
+
+nav a{
+	padding: 1%;
+	margin: auto;
+	background-color: #BF0918;
+	color: #E7EBEB;
+	border: solid 2px #161313;
+}
 
 
 /* TABLET STYLES */
@@ -16,8 +42,17 @@ body {
   /* applies to screens wider than 499px */
   
   body {
-    background: #cfc;
+    background: #E7EBEB;
   } 
+  .menu{
+text-align: center;
+line-height: 3em;
+}
+.logo{
+	padding: 1%;
+	padding-bottom: 0;
+	height: 100px;
+}
 }
 
 
@@ -29,6 +64,15 @@ body {
   /* applies to screens wider than 999px */
 
   body {
-    background: #ccf;
+    background: #E7EBEB;
   } 
+  .menu{
+text-align: center;
+line-height: 3em;
+}
+.logo{
+	padding: 1%;
+	padding-bottom: 0;
+	height: 100px;
+}
 }
