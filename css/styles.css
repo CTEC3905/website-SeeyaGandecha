@@ -2,6 +2,7 @@
 
 /* applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
+
 /*colour scheme
 licorice #161313
 Venetian red #BF0918
@@ -9,24 +10,48 @@ cosmic cobal #293C89
 slate grey #6A81A0
 platinum #E7EBEB
 */
+
 body {
-  background: #E7EBEB;} 
+  background: #E7EBEB; 
+  box-sizing: border-box;}
 
+.layout-grid{
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-areas: 
+  	"header header"
+    "logo nav"
+    "main main"
+    "footer footer";
+}
+header {
+  grid-area: header;}
 
-.menu{
-text-align: center;
-line-height: 3em;}
-.logo{
-	padding: 5%;
-	padding-bottom: 0;
-	height: 100px;}
+.logo {
+  grid-area: logo;
+  padding: 5%;
+  padding-bottom: 0;
+  height: 100px;}
+
+nav {
+  grid-area: nav;
+  text-align: center;
+  line-height: 10em;}
 
 nav a{
-	padding: 1%;
-	margin: auto;
-	background-color: #BF0918;
-	color: #E7EBEB;
-	border: solid 2px #161313;}
+  padding: 1% 3%;
+  margin: 1% 0.5%;
+  background-color: #BF0918;
+  color: #E7EBEB;
+  border: solid 2px #161313;}
+
+main {
+  grid-area: main;
+  background: red;}
+
+footer {
+  grid-area: footer;
+  background: grey;}
 
 
 /* TABLET STYLES */
@@ -37,13 +62,13 @@ nav a{
   
   body {
     background: #E7EBEB;} 
-  .menu{
+/*  .menu{
 text-align: center;
 line-height: 3em;}
 .logo{
 	padding: 1%;
 	padding-bottom: 0;
-	height: 100px;}
+	height: 100px;}*/
 }
 
 
@@ -56,11 +81,11 @@ line-height: 3em;}
 
   body {
     background: #E7EBEB;} 
-  .menu{
+/*  .menu{
 text-align: center;
 line-height: 3em;}
 .logo{
 	padding: 1%;
 	padding-bottom: 0;
-	height: 100px;}
+	height: 100px;}*/
 }
