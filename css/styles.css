@@ -10,29 +10,23 @@ slate grey #6A81A0
 platinum #E7EBEB
 */
 body {
-  background: #E7EBEB;
-} 
+  background: #E7EBEB;} 
 
-nav{
-}
 
 .menu{
 text-align: center;
-line-height: 3em;
-}
+line-height: 3em;}
 .logo{
 	padding: 5%;
 	padding-bottom: 0;
-	height: 100px;
-}
+	height: 100px;}
 
 nav a{
 	padding: 1%;
 	margin: auto;
 	background-color: #BF0918;
 	color: #E7EBEB;
-	border: solid 2px #161313;
-}
+	border: solid 2px #161313;}
 
 
 /* TABLET STYLES */
@@ -42,17 +36,14 @@ nav a{
   /* applies to screens wider than 499px */
   
   body {
-    background: #E7EBEB;
-  } 
+    background: #E7EBEB;} 
   .menu{
 text-align: center;
-line-height: 3em;
-}
+line-height: 3em;}
 .logo{
 	padding: 1%;
 	padding-bottom: 0;
-	height: 100px;
-}
+	height: 100px;}
 }
 
 
@@ -64,15 +55,12 @@ line-height: 3em;
   /* applies to screens wider than 999px */
 
   body {
-    background: #E7EBEB;
-  } 
+    background: #E7EBEB;} 
   .menu{
 text-align: center;
-line-height: 3em;
-}
+line-height: 3em;}
 .logo{
 	padding: 1%;
 	padding-bottom: 0;
-	height: 100px;
-}
+	height: 100px;}
 }
