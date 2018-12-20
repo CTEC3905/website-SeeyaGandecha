@@ -15,6 +15,10 @@ body {
   background: #E7EBEB; 
   box-sizing: border-box;}
 
+a{
+  font-family: Arial;
+  font-size: 1em;}
+
 .layout-grid{
   display: grid;
   grid-template-columns: 250px;
@@ -34,6 +38,7 @@ header {
   height: 100px;}
 
 nav {
+  display: inline;
   grid-area: nav;
   text-align: center;
   line-height: 10em;}
@@ -43,10 +48,20 @@ nav a{
   margin: 1% 0.5%;
   background-color: #BF0918;
   color: #E7EBEB;
-  border: solid 2px #161313;}
+  border: solid 2px #161313;
+  transition: all .5s;}
+
+nav a:hover {
+  background: #161313;
+  outline-color: #BF0918;
+  padding: 1% 6%;
+  margin: 1% 1%;
+  font-size: 1.5em;
+}
 
 main {
   grid-area: main;
+  height: 100%;
   background: red;}
 
 footer {
