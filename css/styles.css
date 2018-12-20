@@ -1,15 +1,13 @@
-/* MOBILE AND GLOBAL STYLES */
-
-/* applies to screens smaller than 500px (first breakpoint) */
-/* and above unless overwritten below */
-
 /*colour scheme
 licorice #161313
 Venetian red #BF0918
 cosmic cobal #293C89
 slate grey #6A81A0
 platinum #E7EBEB
-*/
+
+*//* MOBILE AND GLOBAL STYLES */
+/* applies to screens smaller than 500px (first breakpoint) */
+/* and above unless overwritten below */
 
 body {
   background: #E7EBEB; 
@@ -21,31 +19,34 @@ a{
 
 .layout-grid{
   display: grid;
-  grid-template-columns: 250px;
+  grid-template-columns: 100%;
   grid-template-areas: 
-  	"header header"
-    "logo nav"
-    "main main"
-    "footer footer";
-}
+  	"header"
+    "logo"
+    "nav"
+    "main"
+    "footer";}
+
 header {
   grid-area: header;}
 
 .logo {
+  display: block;
   grid-area: logo;
-  padding: 5%;
-  padding-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5% 0;
   height: 100px;}
 
 nav {
-  display: inline;
+  display: grid;
   grid-area: nav;
   text-align: center;
-  line-height: 10em;}
+  line-height: 2em;}
 
 nav a{
-  padding: 1% 3%;
-  margin: 1% 0.5%;
+  padding: 5px 3px;
+  margin: 2px 1px;
   background-color: #BF0918;
   color: #E7EBEB;
   border: solid 2px #161313;
@@ -70,37 +71,42 @@ footer {
 
 
 /* TABLET STYLES */
-
 @media screen and (min-width: 500px) {
-
   /* applies to screens wider than 499px */
-  
-  body {
-    background: #E7EBEB;} 
-/*  .menu{
-text-align: center;
-line-height: 3em;}
-.logo{
-	padding: 1%;
-	padding-bottom: 0;
-	height: 100px;}*/
-}
 
 
 
 /* DESKTOP STYLES */
-
 @media screen and (min-width: 1000px) {
-
   /* applies to screens wider than 999px */
 
-  body {
-    background: #E7EBEB;} 
-/*  .menu{
-text-align: center;
-line-height: 3em;}
-.logo{
-	padding: 1%;
-	padding-bottom: 0;
-	height: 100px;}*/
+.layout-grid{
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-areas: 
+  	"header header"
+    "logo nav"
+    "main main"
+    "footer footer";}
+
+nav {
+  display: block;
+  grid-area: nav;
+  text-align: center;
+  line-height: 10em;}
+
+ nav a{
+  padding: 1% 3%;
+  margin: 1% 0.5%;
+  background-color: #BF0918;
+  color: #E7EBEB;
+  border: solid 2px #161313;
+  transition: all .5s;}
+
+nav a:hover {
+  background: #161313;
+  outline-color: #BF0918;
+  padding: 1% 6%;
+  margin: 1% 1%;
+  font-size: 1.5em;
 }
