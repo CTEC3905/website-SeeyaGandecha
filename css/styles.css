@@ -81,7 +81,6 @@ footer {
   /* applies to screens wider than 999px */
 
 .layout-grid{
-  display: grid;
   grid-template-columns: 250px;
   grid-template-areas: 
   	"header header"
@@ -91,22 +90,12 @@ footer {
 
 nav {
   display: block;
-  grid-area: nav;
-  text-align: center;
   line-height: 10em;}
 
  nav a{
   padding: 1% 3%;
-  margin: 1% 0.5%;
-  background-color: #BF0918;
-  color: #E7EBEB;
-  border: solid 2px #161313;
-  transition: all .5s;}
+  margin: 1% 0.5%;}
 
 nav a:hover {
-  background: #161313;
-  outline-color: #BF0918;
-  padding: 1% 6%;
-  margin: 1% 1%;
-  font-size: 1.5em;
+ ;
 }
