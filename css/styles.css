@@ -10,12 +10,15 @@ platinum #E7EBEB
 /* and above unless overwritten below */
 
 body {
+  margin: 0;
   background: #E7EBEB; 
-  box-sizing: border-box;}
+  min-height: 100%;}
 
 a{
   font-family: Arial;
   font-size: 1em;}
+
+/*main layout*/
 
 .layout-grid{
   display: grid;
@@ -54,7 +57,6 @@ nav a{
 
 nav a:hover {
   background: #161313;
-  outline-color: #BF0918;
   padding: 1% 6%;
   margin: 1% 1%;
   font-size: 1.5em;
@@ -62,13 +64,66 @@ nav a:hover {
 
 main {
   grid-area: main;
-  height: 100%;
-  background: red;}
+  background: #6A81A0;}
 
 footer {
   grid-area: footer;
   background: grey;}
 
+/*main content*/
+
+.contactmain{
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: 100%;
+  grid-template-areas: 
+  "left right";}
+
+ .contleft{
+  grid-area: left;
+  margin: 2% 1% 2% 5%;
+  background-color: #E7EBEB;}
+
+ .contright{
+  grid-area: right;
+  margin: 2% 5% 2% 1%;
+  background-color: #E7EBEB;}
+
+.contactform{
+	margin: 20px 0;}
+
+input[type=text], input[type=email], input[type=submit], textarea {
+  text-align: center;
+  width: 90%;
+  padding: 10px;
+  border: 2px solid #6A81A0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 2% 5%;}
+
+label{
+	padding-left: 8%;}
+
+textarea{
+	height: 150px;}
+
+input[type=submit] {
+  background-color: #BF0918;
+  color: white;
+  border: solid 2px #161313;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background: #161313;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
 
 /* TABLET STYLES */
 @media screen and (min-width: 500px) {
@@ -95,7 +150,3 @@ nav {
  nav a{
   padding: 1% 3%;
   margin: 1% 0.5%;}
-
-nav a:hover {
- ;
-}
