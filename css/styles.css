@@ -70,29 +70,26 @@ footer {
   grid-area: footer;
   background: grey;}
 
-/*main content*/
+/*contact page*/
 
 .contactmain{
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 100%;
   grid-template-areas: 
-  "left"
-  "right";}
+  "ctext" "cform";}
 
- .contleft{
-  grid-area: left;
-  margin: 5% 2% 1% 2%;
+.contacttext{
+  grid-area: ctext;
+  margin: 2% 5% 1% 5%;
+  padding: 3%;
   background-color: #E7EBEB;
   text-align: center;}
 
- .contright{
-  grid-area: right;
-  margin: 1% 2% 5% 2%;
-  background-color: #E7EBEB;}
-
 .contactform{
-	margin: 20px 0;}
+  grid-area: cform;
+  margin: 1% 5% 2% 5%;
+  padding-top: 3%; 
+  background-color: #E7EBEB;}
 
 input[type=text], input[type=email], input[type=submit], textarea {
   text-align: center;
@@ -104,10 +101,10 @@ input[type=text], input[type=email], input[type=submit], textarea {
   margin: 2% 5%;}
 
 label{
-	padding-left: 8%;}
+  padding-left: 8%;}
 
 textarea{
-	height: 150px;}
+  height: 150px;}
 
 input[type=submit] {
   background-color: #BF0918;
@@ -119,12 +116,6 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background: #161313;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
 }
 
 /* TABLET STYLES */
@@ -153,20 +144,20 @@ nav {
   padding: 1% 3%;
   margin: 1% 0.5%;}
 
-/*main layout - contact page*/
+/*contact page*/
 
 .contactmain{
   display: grid;
   grid-template-columns: 50%;
   grid-template-rows: 100%;
   grid-template-areas: 
-  "left right";}
+  "ctext cform";}
 
- .contleft{
-  grid-area: left;
+.contacttext{
+  grid-area: ctext;
   margin: 2% 1% 2% 5%;}
 
- .contright{
-  grid-area: right;
+.contactform{
+  grid-area: cform;
   margin: 2% 5% 2% 1%;}
 
