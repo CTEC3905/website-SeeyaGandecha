@@ -82,7 +82,8 @@ footer {
  .contleft{
   grid-area: left;
   margin: 2% 1% 2% 5%;
-  background-color: #E7EBEB;}
+  background-color: #E7EBEB;
+  text-align: center;}
 
  .contright{
   grid-area: right;
