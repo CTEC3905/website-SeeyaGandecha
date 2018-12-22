@@ -118,6 +118,30 @@ input[type=submit]:hover {
   background: #161313;
 }
 
+/*about page*/
+
+.aboutmain{
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "insta" "abouttext";}
+
+.abouttext{
+  grid-area: abouttext;
+  margin: 5%;
+  padding: 3%;
+  width: 100%;
+  background-color: #E7EBEB;
+  text-align: center;}
+
+.insta{
+  grid-area: insta;
+  margin: 5%;
+  padding: 0%;
+  width: 100%;
+  background-color: #E7EBEB;
+  text-align: center;}
+
 /* TABLET STYLES */
 @media screen and (min-width: 500px) {
   /* applies to screens wider than 499px */
