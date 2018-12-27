@@ -119,28 +119,29 @@ input[type=submit]:hover {
 }
 
 /*about page*/
-
 .aboutmain{
-  display: flex;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-  "insta" "abouttext";}
+  grid-template-areas: 
+  "abouttext"
+  "insta";
+}
 
 .abouttext{
   grid-area: abouttext;
-  margin: 5%;
-  padding: 3%;
-  width: 100%;
-  background-color: #E7EBEB;
-  text-align: center;}
+  padding: 3%; 
+  margin: 2% 10%;
+  min-width: 350px; 
+  text-align: center;
+  background: #E7EBEB;
+}
 
 .insta{
-  grid-area: insta;
-  margin: 5%;
-  padding: 0%;
-  width: 100%;
-  background-color: #E7EBEB;
-  text-align: center;}
+  grid-area: insta; 
+  text-align: center;
+  padding: 3%;
+  margin: 2% 10%;
+  min-width: 350px; 
+  background: #E7EBEB;
+}
 
 /* TABLET STYLES */
 @media screen and (min-width: 500px) {
@@ -185,3 +186,20 @@ nav {
   grid-area: cform;
   margin: 2% 5% 2% 1%;}
 
+/*abou page*/
+
+.aboutmain{
+  display: flex;
+  grid-template-columns: auto;
+  grid-template-areas:
+  "insta" "abouttext";}
+
+.abouttext{
+  margin: 2% 2% 1% 5%;
+  width: 70%; 
+  max-height: 500px;}
+
+.insta{
+  margin: 2% 5% 2% 1%;
+  min-width: 350px;
+  max-height: 500px; }
