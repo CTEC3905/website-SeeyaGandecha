@@ -59,8 +59,7 @@ nav a:hover {
   background: #161313;
   padding: 1% 6%;
   margin: 1% 1%;
-  font-size: 1.5em;
-}
+  font-size: 1.5em;}
 
 main {
   grid-area: main;
@@ -111,19 +110,17 @@ input[type=submit] {
   color: white;
   border: solid 2px #161313;
   border-radius: 10px;
-  cursor: pointer;
-}
+  cursor: pointer;}
 
 input[type=submit]:hover {
-  background: #161313;
-}
+  background: #161313;}
 
 /*about page*/
+
 .aboutmain{
   grid-template-areas: 
   "abouttext"
-  "insta";
-}
+  "insta";}
 
 .abouttext{
   grid-area: abouttext;
@@ -131,8 +128,7 @@ input[type=submit]:hover {
   margin: 2% 10%;
   min-width: 350px; 
   text-align: center;
-  background: #E7EBEB;
-}
+  background: #E7EBEB;}
 
 .insta{
   grid-area: insta; 
@@ -140,7 +136,65 @@ input[type=submit]:hover {
   padding: 3%;
   margin: 2% 10%;
   min-width: 350px; 
+  background: #E7EBEB;}
+
+/*ttt gallery*/
+.galleries{
+  display: grid;
   background: #E7EBEB;
+  padding: 1%;
+  margin: 2%;
+  justify-content: space-around;
+  grid-template-columns: repeat(4, auto);}
+
+.album{
+  padding: 10px;
+  position: relative;
+  width: 200px;
+}
+
+.albumimage{
+  display: block;
+  width: 200px;
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  transition: 1.5s;
+}
+
+.texthover {
+  position: absolute;
+  text-align: center;
+  transition: 1.5s;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+}
+
+.text {
+  background-color: none;
+  text-align: center;
+  padding: auto;
+  color: #161313;
+  font-size: 30px;
+}
+
+.texthover {
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  transition: 1.5s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.album:hover .albumimage {
+  opacity: 0.1;
+}
+
+.album:hover .texthover {
+  opacity: 1;
 }
 
 /* TABLET STYLES */
@@ -186,7 +240,7 @@ nav {
   grid-area: cform;
   margin: 2% 5% 2% 1%;}
 
-/*abou page*/
+/*about page*/
 
 .aboutmain{
   display: flex;
@@ -203,3 +257,5 @@ nav {
   margin: 2% 5% 2% 1%;
   min-width: 350px;
   max-height: 500px; }
+
+/*ttt gallery page*/
