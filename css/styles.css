@@ -139,18 +139,19 @@ input[type=submit]:hover {
   background: #E7EBEB;}
 
 /*ttt gallery*/
+
 .galleries{
   display: grid;
   background: #E7EBEB;
   padding: 1%;
   margin: 2%;
   justify-content: space-around;
-  grid-template-columns: repeat(4, auto);}
+  grid-template-columns: auto;}
 
 .album{
   padding: 10px;
   position: relative;
-  width: 200px;
+  width: 300px;
 }
 
 .albumimage{
@@ -259,3 +260,10 @@ nav {
   max-height: 500px; }
 
 /*ttt gallery page*/
+
+.galleries{
+  grid-template-columns: repeat(4, auto);}
+
+.album{
+  width: 200px;
+
