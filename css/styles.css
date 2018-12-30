@@ -198,6 +198,22 @@ input[type=submit]:hover {
   opacity: 1;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.col {
+  flex: 100%;
+  max-width: 100%;
+  padding: 5px;
+}
+
+.col img {
+  max-width: 100%;
+  margin-top: px;
+  vertical-align: middle;
+}
 /* TABLET STYLES */
 @media screen and (min-width: 500px) {
   /* applies to screens wider than 499px */
@@ -266,4 +282,12 @@ nav {
 
 .album{
   width: 200px;
+}
+
+.col {
+  flex: 24%;
+  max-width: 25%;
+  padding: 5px;
+}
+
 
