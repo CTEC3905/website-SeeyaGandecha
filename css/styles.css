@@ -214,6 +214,15 @@ input[type=submit]:hover {
   margin-top: px;
   vertical-align: middle;
 }
+
+.tttimages{
+  display: none;
+}
+
+.amsterdam img{
+  width: 100px;
+}
+
 /* TABLET STYLES */
 @media screen and (min-width: 500px) {
   /* applies to screens wider than 499px */
@@ -289,5 +298,3 @@ nav {
   max-width: 25%;
   padding: 5px;
 }
-
-
