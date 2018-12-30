@@ -1,28 +1,6 @@
 "use strict";
 
-const hello = document.getElementById("amsterdam");
-
-
-function amsterdam() {
-	document.getElementById("testimgs").style.display = "block"
-}
-hello.addEventListener("click", amsterdam);
-
-
-// var container = document.getElementById('amsterdamreal');
-// var images = 67;
-
-// for (var i = 1; i < images; i++) {
-    
-//     var node = new Image();
-//     node.setAttribute('src','imgs/TTTgalleries/amsterdam/amsterdam' + i + '.jpg'); // but i like conventions
-//     container.appendChild(node);
-
-//     if (i < images - 1) {
-//         container.appendChild(document.createElement('br'));
-//     }
-// }
-
+//amterdam image population
 
 var am1 = document.getElementById('amsterdamone');
 var am2 = document.getElementById('amsterdamtwo');
@@ -32,34 +10,35 @@ var am5 = document.getElementById('amsterdamfive');
 
 var images = 66;
 
-for (var i = 1; i < 13; i++) {
+for (var i = 1; i < 15; i++) {
+    var node = new Image();
+    node.setAttribute('src','imgs/TTTgalleries/amsterdam/amsterdam' + i + '.jpg');
+    am1.appendChild(node);}
+for (var i = 15; i < 29; i++) {
     
     var node = new Image();
-    node.setAttribute('src','imgs/TTTgalleries/amsterdam/amsterdam' + i + '.jpg'); // but i like conventions
-    am1.appendChild(node);
-}
-for (var i = 13; i < 26; i++) {
+    node.setAttribute('src','imgs/TTTgalleries/amsterdam/amsterdam' + i + '.jpg');
+    am2.appendChild(node);}
+for (var i = 29; i < 42; i++) {
     
     var node = new Image();
-    node.setAttribute('src','imgs/TTTgalleries/amsterdam/amsterdam' + i + '.jpg'); // but i like conventions
-    am2.appendChild(node);
-}
-for (var i = 26; i < 39; i++) {
+    node.setAttribute('src','imgs/TTTgalleries/amsterdam/amsterdam' + i + '.jpg');
+    am3.appendChild(node);}
+for (var i = 42; i < 55; i++) {
     
     var node = new Image();
-    node.setAttribute('src','imgs/TTTgalleries/amsterdam/amsterdam' + i + '.jpg'); // but i like conventions
-    am3.appendChild(node);
-}
-for (var i = 39; i < 52; i++) {
+    node.setAttribute('src','imgs/TTTgalleries/amsterdam/amsterdam' + i + '.jpg'); 
+    am4.appendChild(node);}
+for (var i = 55; i < images; i++) {
     
     var node = new Image();
-    node.setAttribute('src','imgs/TTTgalleries/amsterdam/amsterdam' + i + '.jpg'); // but i like conventions
-    am4.appendChild(node);
-}
-for (var i = 52; i < images; i++) {
-    
-    var node = new Image();
-    node.setAttribute('src','imgs/TTTgalleries/amsterdam/amsterdam' + i + '.jpg'); // but i like conventions
-    am5.appendChild(node);
-}
+    node.setAttribute('src','imgs/TTTgalleries/amsterdam/amsterdam' + i + '.jpg');
+    am5.appendChild(node);}
 
+//amsterdam display 
+const dam = document.getElementById("amsterdam");
+
+function amsterdam() {
+	document.getElementById("amsterdamdisplay").style.display = "block"
+}
+dam.addEventListener("click", amsterdam);
