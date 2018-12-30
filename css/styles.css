@@ -201,17 +201,18 @@ input[type=submit]:hover {
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 0;
 }
 .col {
   flex: 100%;
   max-width: 100%;
-  padding: 5px;
+  padding: 0 5%;
 }
 
 .col img {
   max-width: 100%;
-  margin-top: px;
+  margin: 0;
+  padding: 0;
   vertical-align: middle;
 }
 
@@ -219,9 +220,6 @@ input[type=submit]:hover {
   display: none;
 }
 
-.amsterdam img{
-  width: 100px;
-}
 
 /* TABLET STYLES */
 @media screen and (min-width: 500px) {
@@ -293,8 +291,11 @@ nav {
   width: 200px;
 }
 
+.row {
+  padding: 0 2%;
+}
 .col {
-  flex: 24%;
-  max-width: 25%;
-  padding: 5px;
+  flex: 20%;
+  max-width: 20%;
+  padding: 0;
 }
