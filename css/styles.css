@@ -151,7 +151,9 @@ input[type=submit]:hover {
 .album{
   padding: 10px;
   position: relative;
-  width: 300px;}
+  min-width: 100px
+  max-width: 300px;}
+
 
 .albumimage{
   display: block;
@@ -278,14 +280,11 @@ nav {
   grid-template-columns: repeat(4, auto);}
 
 .album{
-  width: 200px;
-}
+  width: 80%;}
 
 .row {
-  padding: 0 2%;
-}
+  padding: 0 2%;}
 .col {
   flex: 20%;
   max-width: 20%;
-  padding: 0;
-}
+  padding: 0;}
