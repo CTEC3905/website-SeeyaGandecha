@@ -402,3 +402,14 @@ function models() {
     document.getElementById("displaymodels").style.display = "block";
 }
 mods.addEventListener("click", models);
+
+
+// scroll button ttt page
+
+const btn = document.getElementById("topbtn");
+function topbtn() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+btn.addEventListener("click", topbtn);
+
