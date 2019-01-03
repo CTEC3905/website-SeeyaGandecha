@@ -1,7 +1,6 @@
 /*colour scheme
 licorice #161313
 Venetian red #BF0918
-cosmic cobal #293C89
 slate grey #6A81A0
 platinum #E7EBEB
 
@@ -216,6 +215,7 @@ input[type=submit]:hover {
 .page {
   display: none;
   margin:0px;
+  padding-top: 0px;
   height: 100%;}
       
 .page{margin:0px;}
@@ -246,6 +246,33 @@ input[type=submit]:hover {
   border: solid 2px #161313
 }
 
+/*footer*/
+.footer{
+  background-color: #161313;
+  text-align: center;
+}
+ .footer p{
+  font-size: 12px;
+  padding: 0;
+  margin: 5px;
+  color: #E7EBEB;
+ }
+
+.footer a:link {
+  color: #E7EBEB;
+}
+
+.footer a:visited {
+  color: #E7EBEB;
+}
+
+.footer a:hover {
+  color: #BF0918;
+}
+
+.footer a:active {
+  color: #6A81A0;
+}
 
 /* TABLET STYLES */
 @media screen and (min-width: 500px) {
