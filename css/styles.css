@@ -212,70 +212,27 @@ input[type=submit]:hover {
 .tttimages{
   display: none;}
 
-/*
-.EXE_NAV {
-  text-align: center;
-}
-.EXE_NAV nav {
-  width: 100%;
-  padding-top: 0.5rem;
-  background: #fff;
-  position: fixed;
-  left: 0; top: 0;
-  width:100%;
-  height: 30px;
-  z-index: 50;
-}
-.EXE_NAV nav ul {
-  list-style: none;
-  width: inherit;
-  margin: 0;
-}
-.EXE_NAV ul li:nth-child( 3n + 1), #EXE_MAIN .panel:nth-child( 3n + 1) {
-  background: blue;
-}
-.EXE_NAV ul li:nth-child( 3n + 2), #EXE_MAIN .panel:nth-child( 3n + 2) {
-  background: pink;
-}
-.EXE_NAV ul li:nth-child( 3n + 3), #EXE_MAIN .panel:nth-child( 3n + 3) {
-  background: green;
-}
-.EXE_NAV ul li {
-  display: inline-block;
-  padding: 0.3rem 0.5rem;
-  border-radius: 2px;
-  line-height: 1.5;
-}
-.EXE_NAV ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-.panel {
-  width: 100%;
-  height: 50px; /* Your DIVs Height */
-  z-index:0;
-  -webkit-transform: translateZ( 0 );
-  transform: translateZ( 0 );
-  -webkit-transition: -webkit-transform 0.6s ease-in-out;
-  transition: transform 0.6s ease-in-out;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
+/*test*/
 
-/* Smooth CSS3 Scrolling */
-a[ id= "EXE_DIV1" ]:target ~ #EXE_MAIN article.panel {
-  -webkit-transform: translateY( 0px);
-  transform: translateY( 0px );
-}
-a[ id= "EXE_DIV2" ]:target ~ #EXE_MAIN article.panel {
-  -webkit-transform: translateY( -500px );
-  transform: translateY( -500px );
-}
-a[ id= "EXE_DIV3" ]:target ~ #EXE_MAIN article.panel {
-  -webkit-transform: translateY( -1000px );
-  transform: translateY( -1000px );
-}
-*/
+.page {
+        display: none;
+        background-color:#ffeecc;
+        padding-left:20px;
+        padding-top:20px;
+        margin:0px;
+        height: 100%;}
+
+ .page h1 {
+        margin:0px;
+      }
+      
+      .default {
+        display:block;
+      }
+      
+      :target {
+        display:block;
+      }
 
 /* TABLET STYLES */
 @media screen and (min-width: 500px) {
