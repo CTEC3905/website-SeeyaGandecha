@@ -405,7 +405,6 @@ mods.addEventListener("click", models);
 
 
 // scroll button ttt page
-
 const btn = document.getElementById("topbtn");
 function topbtn() {
   document.body.scrollTop = 0;
