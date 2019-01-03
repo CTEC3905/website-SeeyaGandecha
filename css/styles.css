@@ -24,7 +24,7 @@ a{
   display: grid;
   grid-template-columns: 100%;
   grid-template-areas: 
-  	"header"
+    "header"
     "logo"
     "nav"
     "main"
@@ -238,7 +238,7 @@ input[type=submit]:hover {
 .layout-grid{
   grid-template-columns: 250px;
   grid-template-areas: 
-  	"header header"
+    "header header"
     "logo nav"
     "main main"
     "footer footer";}
