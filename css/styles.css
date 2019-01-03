@@ -210,6 +210,20 @@ input[type=submit]:hover {
 .tttimages{
   display: none;}
 
+/*album ttt page navigation*/
+
+.page {
+  display: none;
+  margin:0px;
+  height: 100%;}
+      
+.page{margin:0px;}
+
+.default {display:block;}
+      
+:target {display:block;}
+      
+
 
 /* TABLET STYLES */
 @media screen and (min-width: 500px) {
