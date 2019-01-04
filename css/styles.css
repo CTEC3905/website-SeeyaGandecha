@@ -254,6 +254,69 @@ input[type=submit]:hover {
   border: solid 2px #161313
 }
 
+/*home page*/
+
+.homemain{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: 
+  "mainwelcome" 
+  "mainnews"
+  "maininsta"
+  "mainenquiry";}
+
+.mainwelcome{
+  grid-area: mainwelcome;
+  border-radius: 50px;
+  margin: 5% 5% 2% 5%;
+  padding: 5%;
+  background-color: #E7EBEB;
+  text-align: center;}
+
+.maininsta{
+  grid-area: maininsta;
+  border-radius: 50px;
+  margin: 2% 5%;
+  padding: 5%;
+  background-color: #E7EBEB;
+  text-align: center;}
+
+.mainnews{
+  grid-area: mainnews;
+  border-radius: 50px;
+  margin: 2% 5%;
+  padding: 5%;
+  background-color: #E7EBEB;
+  text-align: center;}
+
+.mainenquiry{
+  grid-area: mainenquiry;
+  border-radius: 50px;
+  margin: 2% 5% 5% 5%;
+  padding: 5%;
+  background-color: #E7EBEB;
+  text-align: center;}
+
+.newyear{
+  width: 40%;
+  padding: 0 1px; 
+  margin: 0;
+  font-size: 14px;
+  color: #E7EBEB;
+  text-shadow: 1px 1px 5px black, 0 0 30px blue, 0 0 10px darkblue;
+  text-align: center;
+  font-weight: bold;
+  background-color: #BF0918;
+  border: solid 2px #161313; ;
+  position: relative;
+  animation: scroll 10s infinite;
+  animation-timing-function: linear
+  }
+
+@keyframes scroll {
+  from {left: 0%;}
+  to {left: 100%;}
+}
 /*footer*/
 
 .footer{
@@ -359,4 +422,33 @@ nav {
   flex: 20%;
   max-width: 20%;
   padding: 0;
+}
+
+/*home page*/
+
+.homemain{
+  grid-template-columns: 50%;
+  grid-template-rows: 50%;
+  grid-template-areas: 
+  "mainwelcome maininsta"
+  "mainnews mainenquiry";}
+
+.mainwelcome{
+  margin: 5% 1% 2% 5%;}
+
+.maininsta{
+  margin: 5% 5% 2% 1%;}
+
+.mainnews{
+  margin: 2% 1% 5% 5%;
+  padding: 5%;}
+
+.mainenquiry{
+  margin: 1% 5% 5% 2%;}
+
+.newyear{
+  width: 30%;
+  padding: 0 2%; 
+  font-size: 20px;
+  animation: scroll 15s infinite;
 }
