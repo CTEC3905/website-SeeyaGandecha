@@ -367,31 +367,31 @@ let modelimages = 28;
 for (let i = 1; i < 6; i++) {
     
     let node = new Image();
-    node.setAttribute('src','imgs/TTTgalleries/simmy/models' + i + '.jpg'); 
+    node.setAttribute('src','imgs/TTTgalleries/simmy/models' + i + '.JPG'); 
     mod1.appendChild(node);
 }
 for (let i = 6; i < 12; i++) {
     
     let node = new Image();
-    node.setAttribute('src','imgs/TTTgalleries/simmy/models' + i + '.jpg'); 
+    node.setAttribute('src','imgs/TTTgalleries/simmy/models' + i + '.JPG'); 
     mod2.appendChild(node);
 }
 for (let i = 12; i < 18; i++) {
     
     let node = new Image();
-    node.setAttribute('src','imgs/TTTgalleries/simmy/models' + i + '.jpg'); 
+    node.setAttribute('src','imgs/TTTgalleries/simmy/models' + i + '.JPG'); 
     mod3.appendChild(node);
 }
 for (let i = 18; i < 23 ; i++) {
     
     let node = new Image();
-    node.setAttribute('src','imgs/TTTgalleries/simmy/models' + i + '.jpg'); 
+    node.setAttribute('src','imgs/TTTgalleries/simmy/models' + i + '.JPG'); 
     mod4.appendChild(node);
 }
 for (let i = 23; i < modelimages; i++) {
     
     let node = new Image();
-    node.setAttribute('src','imgs/TTTgalleries/simmy/models' + i + '.jpg'); 
+    node.setAttribute('src','imgs/TTTgalleries/simmy/models' + i + '.JPG'); 
     mod5.appendChild(node);
 }
 
