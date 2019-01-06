@@ -401,22 +401,29 @@ input[type=submit]:hover {
   z-index: 2;
   width: 100%;
   height: 100%;
-  cursor: pointer;
   visibility:hidden;}
 
+.overlay img{
+  max-width: 90%
+}
 .overlay :hover {
-  opacity: 0.2;
+  opacity: 0.9;
 }
 
-.covertext {
+.enterbtn {
+  font-size: 35px;
   position: absolute;
-  top: 90%;
-  left: 40%;
-  font-size: 50px;
+  top: 70%;
+  left: 30%;
+  border: solid 5px #BF0918;
+  border-radius: 50px;
+  padding: 1px 1%; }
 
+.enterbtn:hover {
+  background: #BF0918;
+  cursor: pointer;
+  opacity: 0.7;
 }
-
-
 
 /*footer*/
 
@@ -558,3 +565,22 @@ nav {
   padding: 5%;
   background-color: #E7EBEB;
   text-align: center;}
+
+}
+
+.overlay :hover {
+  opacity: 1;
+}
+
+.overlay img{
+  max-width: 100%
+}
+
+.enterbtn {
+  font-size: 50px;
+  top: 80%;
+  left: 70%; }
+
+.enterbtn:hover {
+  opacity: 0.9;
+}

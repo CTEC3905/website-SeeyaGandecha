@@ -9,7 +9,7 @@
     }
 })();
 
-// document.getElementById("overlay").addEventListener("click", 
-//     function(){
-//   document.getElementById("overlay").style.display = "none";
-// })
+document.getElementById("enter").addEventListener("click", 
+    function(){
+  window.location.href=window.location.href;
+})
