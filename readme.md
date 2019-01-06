@@ -1,8 +1,8 @@
- ## CTEC-3905 submission
- #P15194758 
- #Seeya Gandecha
- #Live GitPages website address: https://ctec3905.github.io/website-SeeyaGandecha/
- #Git Classroom Repository: https://github.com/CTEC3905/website-SeeyaGandecha/
+ #CTEC-3905 submission
+ ##P15194758 
+ ##Seeya Gandecha
+ ##Live GitPages website address: https://ctec3905.github.io/website-SeeyaGandecha/
+ ##Git Classroom Repository: https://github.com/CTEC3905/website-SeeyaGandecha/
 
 
 For this assignment I used a combination of the examples given in Labs and https://www.w3schools.com to create the final submission displaying the use of HTML5, CSS3 and JavaScript.
