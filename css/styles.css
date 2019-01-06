@@ -277,27 +277,6 @@ input[type=submit]:hover {
   font-size: 20px;
   letter-spacing: .1em;}
 
-.topline{
-  overflow: hidden;
-  border-right: .15em solid #BF0918; 
-  white-space: nowrap; 
-  margin: 0 auto; 
-  letter-spacing: .1em;
-  animation: 
-  typing 3.5s steps(40, end),
-  blink-caret .75s step-end infinite;
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 50% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #BF0918; }
-}
 
 .maininsta{
   grid-area: maininsta;
@@ -381,12 +360,12 @@ input[type=submit]:hover {
   background-color: #BF0918;
   border: solid 2px #161313; ;
   position: relative;
-  animation: scroll 10s infinite;
+  animation: scroll 10s infinite alternate;
   animation-timing-function: linear
   }
 
 @keyframes scroll {
-  from {left: 0%;}
+  from {left: -50%;}
   to {left: 100%;}
 }
 
@@ -427,10 +406,10 @@ input[type=submit]:hover {
 
 /*footer*/
 
-.footer{
+.footer{ 
   background-color: #161313;
-  text-align: center;
-}
+  text-align: center;}
+
  .footer p{
   font-size: 12px;
   padding: 0;
@@ -458,6 +437,38 @@ input[type=submit]:hover {
 /* TABLET STYLES */
 @media screen and (min-width: 500px) {
   /* applies to screens wider than 499px */
+
+/*ttt gallary*/
+.galleries{
+  grid-template-columns: repeat(2, auto);}
+
+.album{
+  width: 230px;}
+
+
+/*home page*/
+
+.topline{
+  overflow: hidden;
+  border-right: .15em solid #BF0918; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .1em;
+  animation: 
+  typing 3.5s steps(40, end),
+  blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 50% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #BF0918; }
+}
 
 
 
@@ -520,20 +531,17 @@ nav {
   grid-template-columns: repeat(4, auto);}
 
 .album{
-  width: 200px;
-}
+  width: 200px;}
 
 .row {
-  padding: 0 2%;
-}
+  padding: 0 2%;}
+
 .col {
   flex: 20%;
   max-width: 20%;
-  padding: 0;
-}
+  padding: 0;}
 
 /*home page*/
-
 
 .newyear{
   width: 30%;
@@ -541,14 +549,12 @@ nav {
   font-size: 20px;
   animation: scroll 15s infinite;}
 
-
 .homemain{
   display: grid;
   grid-template-columns: 50%;
   grid-template-areas: 
   "mainwelcome maininsta"
   "mainnews maininsta";}
-
 
 .mainwelcome{
   margin: 5% 1% 2% 5%;
@@ -566,15 +572,11 @@ nav {
   background-color: #E7EBEB;
   text-align: center;}
 
-}
-
 .overlay :hover {
-  opacity: 1;
-}
+  opacity: 1;}
 
 .overlay img{
-  max-width: 100%
-}
+  max-width: 100%}
 
 .enterbtn {
   font-size: 50px;
@@ -582,5 +584,4 @@ nav {
   left: 70%; }
 
 .enterbtn:hover {
-  opacity: 0.9;
-}
+  opacity: 0.9;}
