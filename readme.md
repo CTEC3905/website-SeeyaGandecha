@@ -19,6 +19,8 @@ If you look at the ttt.js file you will be able to see repeated code. I left thi
 
 - For the albums I used https://www.w3schools.com/howto/howto_css_image_overlay.asp as a guide to create an customise my album covers. https://dev.to/hakash/100-pure-htmlcss-page-navigation---no-javascript-required-2em5 was used to help navigation and loading of images for each album and https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp to create the responsive layout for images shown. The main portfolio page was the most difficult out to create as there were a lot of issues arising.
 
+*Please be aware the the portfolio page of thr website takes a while to load and full function may not be achieved if not fully loaded on your browser*
+
 - The cover page shown on the home screen when you first enter the site was created using LocalStorage. Once the user has viewed the site, the 'cover' will not show up again (unless browser data is erased). JavaScript code for this was taken from https://stackoverflow.com/questions/30899415/show-a-div-only-once-per-time-the-user-is-on-the-site, If you look at the commits, you will see I struggled to get this work but then managed to compromise with this solution.
 
 - During the entire process of creating this site, I used Chrome to test the desktop view of the site but also used multiple android devices to check the responsive formatting.
