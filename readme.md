@@ -21,6 +21,6 @@ If you look at the ttt.js file you will be able to see repeated code. I left thi
 
 - The cover page shown on the home screen when you first enter the site was created using LocalStorage. Once the user has viewed the site, the 'cover' will not show up again (unless browser data is erased). JavaScript code for this was taken from https://stackoverflow.com/questions/30899415/show-a-div-only-once-per-time-the-user-is-on-the-site, If you look at the commits, you will see I struggled to get this work but then managed to compromise with this solution.
 
--During the entire process of creating this site, I used Chrome to test the desktop view of the site but also used multiple android devices to check the responsive formatting.
+- During the entire process of creating this site, I used Chrome to test the desktop view of the site but also used multiple android devices to check the responsive formatting.
 
 Overall, I have enjoyed this module and creating my final submission, I have learned a lot and it's definitely given me an incite into web Development. Hope you enjoy the photography!
