@@ -147,10 +147,26 @@ input[type=submit]:hover {
   border-radius: 50px;
 }
 
+/*ttt page*/
+.tttmain{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: 
+  "albumselect" "galleries"
+}
+.albumselect{
+  margin: 2% 1% 0 2%;
+  padding: 1% 0;
+  border-radius: 50px;
+  grid-area: albumselect;
+  background: #E7EBEB;  
+  font-size: 25px;
+  text-align: center;}
+
 /*ttt gallery*/
 
 .galleries{
-  border-radius: 0;
+  border-radius: 25px;
   display: grid;
   background: #E7EBEB;
   padding: 1%;
@@ -442,7 +458,7 @@ input[type=submit]:hover {
   grid-template-columns: repeat(2, auto);}
 
 .album{
-  width: 230px;}
+  width: 200px;}
 
 
 /*home page*/
@@ -468,7 +484,6 @@ input[type=submit]:hover {
   from, to { border-color: transparent }
   50% { border-color: #BF0918; }
 }
-
 
 
 /* DESKTOP STYLES */
