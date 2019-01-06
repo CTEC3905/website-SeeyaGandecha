@@ -261,26 +261,90 @@ input[type=submit]:hover {
   display: grid;
   grid-template-columns: 100%;
   grid-template-areas: 
-  "mainwelcome" 
-  "mainnews"
-  "maininsta"
-  "mainenquiry";}
+  "mainwelcome"
+  "mainnews" 
+  "maininsta";}
 
 .mainwelcome{
   grid-area: mainwelcome;
   border-radius: 50px;
-  margin: 5% 5% 2% 5%;
+  margin: 5% 5% 2% 5%;*;
   padding: 5%;
   background-color: #E7EBEB;
   text-align: center;}
 
+.mainwelcome p {
+  font-size: 20px;
+  letter-spacing: .1em;}
+
+.topline{
+  overflow: hidden;
+  border-right: .15em solid #BF0918; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .1em;
+  animation: 
+  typing 3.5s steps(40, end),
+  blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 50% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #BF0918; }
+}
+
 .maininsta{
   grid-area: maininsta;
   border-radius: 50px;
-  margin: 2% 5%;
-  padding: 5%;
+  margin: 2% 5%;  
+  padding: 1%;
   background-color: #E7EBEB;
   text-align: center;}
+
+.idxrow {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;}
+
+.idxcol {
+  max-width: 100%;
+  padding: 0 5%;}
+
+.idxcol img {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;}
+
+.maininsta p{
+  margin: 0;
+  padding: 5% 0;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.maininsta a:link {
+  color: #BF0918;
+}
+
+.maininsta a:visited {
+  color: #6A81A0;
+}
+
+.maininsta a:hover {
+  color: #BF0918;
+}
+
+.maininsta a:active {
+  color: #161313;
+}
+
 
 .mainnews{
   grid-area: mainnews;
@@ -290,13 +354,20 @@ input[type=submit]:hover {
   background-color: #E7EBEB;
   text-align: center;}
 
-.mainenquiry{
-  grid-area: mainenquiry;
-  border-radius: 50px;
-  margin: 2% 5% 5% 5%;
-  padding: 5%;
-  background-color: #E7EBEB;
-  text-align: center;}
+
+.blinktxt{
+  font-size: 40px;
+  line-height: 100px;
+  text-shadow: 5px 5px 2px #E7EBEB, 0 0px 1em #BF0918, 0 0 5em #6A81A0;
+  color: #161313;
+  animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
 
 .newyear{
   width: 40%;
@@ -304,7 +375,7 @@ input[type=submit]:hover {
   margin: 0;
   font-size: 14px;
   color: #E7EBEB;
-  text-shadow: 1px 1px 5px black, 0 0 30px blue, 0 0 10px darkblue;
+  text-shadow: 1px 1px 5px black, 0 0 30px blue, 0 0 10px grey;
   text-align: center;
   font-weight: bold;
   background-color: #BF0918;
@@ -331,7 +402,7 @@ input[type=submit]:hover {
   width: 100%;
   height: 100%;
   cursor: pointer;
-}
+  visibility:hidden;}
 
 .overlay :hover {
   opacity: 0.2;
@@ -344,6 +415,8 @@ input[type=submit]:hover {
   font-size: 50px;
 
 }
+
+
 
 /*footer*/
 
@@ -454,29 +527,34 @@ nav {
 
 /*home page*/
 
-.homemain{
-  grid-template-columns: 50%;
-  grid-template-rows: 50%;
-  grid-template-areas: 
-  "mainwelcome maininsta"
-  "mainnews mainenquiry";}
-
-.mainwelcome{
-  margin: 5% 1% 2% 5%;}
-
-.maininsta{
-  margin: 5% 5% 2% 1%;}
-
-.mainnews{
-  margin: 2% 1% 5% 5%;
-  padding: 5%;}
-
-.mainenquiry{
-  margin: 1% 5% 5% 2%;}
 
 .newyear{
   width: 30%;
   padding: 0 2%; 
   font-size: 20px;
-  animation: scroll 15s infinite;
-}
+  animation: scroll 15s infinite;}
+
+
+.homemain{
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-areas: 
+  "mainwelcome maininsta"
+  "mainnews maininsta";}
+
+
+.mainwelcome{
+  margin: 5% 1% 2% 5%;
+  padding: 5%;}
+
+.maininsta{
+  margin: 2% 5%;}
+
+.idxcol img {
+  max-width: 49%;}
+
+.mainnews{
+  margin: 2% 1% 5% 5%;
+  padding: 5%;
+  background-color: #E7EBEB;
+  text-align: center;}
