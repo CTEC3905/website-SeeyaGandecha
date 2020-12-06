@@ -1,7 +1,7 @@
  # CTEC-3905 submission
  ## P15194758 
  ## Seeya Gandecha
- ## Live GitPages website address: https://ctec3905.github.io/website-SeeyaGandecha/
+ ## Live GitPages website address: https://ctec3905students.github.io/website-SeeyaGandecha/
  ## Git Classroom Repository: https://github.com/CTEC3905/website-SeeyaGandecha/
 
 
